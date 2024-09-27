@@ -7,22 +7,46 @@
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>Click here to tweak this text however you want.</p>",
-      "description": "This text is entirely editable, tailor it freely."
+      "title": "<p>Dicas e Notícias Mundo do caminhão</p>"
     },
     {
       "__resolveType": "site/sections/MainPost.tsx",
       "post": {
         "__resolveType": "blog/loaders/BlogPostItem.ts",
         "slug": "why-we-web"
-      }
+      },
+      "posts": [
+        {
+          "authors": [],
+          "categories": [],
+          "extraProps": [],
+          "title": "CASHBACK: O QUE É E COMO USAR A SEU FAVOR NAS COMPRAS",
+          "excerpt": "Já imaginou comprar e ainda receber algo em troca? Além dos descontos e das opções ...",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/bloguncd1/8d9546e8-f89b-455e-926c-96049cc7084f/image-366.png",
+          "date": "2024-09-26",
+          "slug": "post-principal-01",
+          "content": "<p>post 1</p>"
+        },
+        {
+          "authors": [],
+          "categories": [],
+          "extraProps": [],
+          "title": "Post principal 2",
+          "excerpt": "Principal 2",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/bloguncd1/5ce9903b-755e-473e-9641-a19d85d8e718/image-366-(1).png",
+          "date": "2024-09-26",
+          "slug": "post-principal-02",
+          "content": "<p>post 1</p>"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/BlogPosts.tsx",
       "posts": {
         "__resolveType": "blog/loaders/BlogpostList.ts",
         "count": 6
-      }
+      },
+      "pagination": {}
     },
     {
       "__resolveType": "Footer"

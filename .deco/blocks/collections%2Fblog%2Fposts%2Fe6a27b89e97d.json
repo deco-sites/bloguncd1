@@ -1,0 +1,31 @@
+{
+  "name": "collections/blog/posts/e6a27b89e97d",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [
+      {
+        "name": "Name of the Author",
+        "email": "author@deco.cx",
+        "jobTitle": "Author",
+        "company": "deco.cx",
+        "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e"
+      }
+    ],
+    "categories": [
+      {
+        "name": "Performance",
+        "slug": "performance"
+      }
+    ],
+    "extraProps": [],
+    "title": "o que é cashback e como usar?",
+    "excerpt": "teste",
+    "date": "2024-09-26",
+    "slug": "post-cashback",
+    "content": "<p><span style=\"font-size: 15pt\">Já imaginou comprar e ainda receber algo em troca? Além dos descontos e das opções de parcelamento, quem vai às compras tem ainda essa oportunidade. Essa possibilidade que ganhou o coração de muitos brasileiros é chamada por aqui de Cashback (ou até mesmo “Compre e Ganhe”). Você sabe o que significa? É fácil saber mais e usufruir desse recurso! Veja:</span></p><p></p><h4>O que é cashback?</h4><p></p><p><span style=\"font-size: 16pt\">Novidade no Brasil nos últimos anos, o Cashback se tornou um aliado de quem vai às compras. Traduzindo do inglês para o português, a palavra significa “dinheiro de volta”. Já fica fácil entender do que se trata, né?! Cashback é o “dinheiro” que um estabelecimento oferece de volta a partir de uma negociação.</span></p><p></p><p><img src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/bloguncd1/e11387fa-fb46-43c0-a89d-47974229a7f2/image-366-(2).png\"></p><h5>Como resgatar um Cashback?</h5><p></p><p>O resgate pode ser feito na próxima compra, com o abatimento do valor. Assim, além dos descontos oferecidos pela loja, o caminhoneiro pode economizar ainda mais com a utilização do seu Cashback. </p><p></p><p><img src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/bloguncd1/cf8d3504-06d3-4514-89fe-30419cbb5b3c/Card-produto.png\"></p><h5>Mais dúvidas sobre Cashback…</h5><p></p><p><span style=\"font-size: 16pt\">Ficou com alguma questão sem resposta? Não deixe de aproveitar um bom cashback por dúvidas. O time da Mundo do Caminhão está preparado para te ajudar nisso. Chame a equipe de atendimento da MC e mande a sua pergunta! ;)</span></p><p></p><p></p><p></p>",
+    "seo": {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/bloguncd1/5ce9903b-755e-473e-9641-a19d85d8e718/image-366-(1).png"
+    },
+    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/bloguncd1/5ce9903b-755e-473e-9641-a19d85d8e718/image-366-(1).png"
+  }
+}

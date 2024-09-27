@@ -27,7 +27,7 @@ const PLACEMENT = {
 
 export default function HeroFlats({
   title = "Click here to tweak this text however you want.",
-  description = "This text is entirely editable, tailor it freely.",
+  description = "",
   image,
   placement = "left",
   cta,
@@ -36,11 +36,11 @@ export default function HeroFlats({
     <div>
       <div class="flex flex-col gap-8 items-center mx-auto">
         <div
-          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
+          class={`flex w-full xl:container xl:mx-auto pt-4 pb-8 mx-5 md:mx-10 z-10 ${
             image
               ? PLACEMENT[placement]
               : "flex-col items-center justify-center text-center"
-          } lg:pt-36 lg:pb-20 gap-12 md:gap-20 items-center`}
+          }  gap-12 md:gap-20 items-center`}
         >
           {image && (
             <Image
@@ -61,15 +61,17 @@ export default function HeroFlats({
             }`}
           >
             <div
-              class="font-medium inline-block leading-[100%] lg:text-[90px] text-4xl tracking-[-2.4px]"
+              class="font-medium inline-block leading-[100%] lg:text-[32px] text-[32px] tracking-[-2.4px]"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
             >
             </div>
-            <p class="leading-[150%] md:text-md text-lg">
-              {description}
-            </p>
+            {description && (
+              <p class="leading-[150%] md:text-md text-lg">
+                {description}
+              </p>
+            )}
             {cta && cta.length > 0 &&
               (
                 <div class="flex gap-3 items-center lg:pt-20">
