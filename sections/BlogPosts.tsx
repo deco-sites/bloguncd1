@@ -35,8 +35,15 @@ function Container({ children }: {
   children: ComponentChildren;
 }) {
   return (
-    <div class="container lg:mx-auto lg:py-14 mx-2 py-12 text-sm">
-      <div class="space-y-8">{children}</div>
+    <div
+      class="container lg:mx-auto mx-2  text-sm"
+      id="tab-contents"
+      role="tabpanel"
+      hx-trigger="load"
+    >
+      <div class="space-y-8">
+        {children}
+      </div>
     </div>
   );
 }

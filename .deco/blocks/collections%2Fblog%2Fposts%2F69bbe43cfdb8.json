@@ -1,0 +1,21 @@
+{
+  "name": "collections/blog/posts/69bbe43cfdb8",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [
+      {
+        "name": "Name of the Author",
+        "email": "author@deco.cx",
+        "jobTitle": "Author",
+        "company": "deco.cx",
+        "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e"
+      }
+    ],
+    "categories": [],
+    "extraProps": [],
+    "date": "2024-09-30",
+    "seo": {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/bloguncd1/8d9546e8-f89b-455e-926c-96049cc7084f/image-366.png"
+    }
+  }
+}
