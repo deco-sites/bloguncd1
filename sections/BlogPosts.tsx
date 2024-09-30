@@ -79,7 +79,7 @@ export default function BlogPosts(
           {posts?.slice(from, to).map((post) => (
             <a
               href={`/blog/${post.slug}`}
-              class="border border-secondary flex flex-row overflow-hidden "
+              class="border border-secondary flex flex-row overflow-hidden rounded-lg"
             >
               <Image
                 width={380}
@@ -92,13 +92,6 @@ export default function BlogPosts(
                 loading="lazy"
               />
               <div class="p-6 space-y-4 w-[70%] bg-white">
-                <div class="flex flex-wrap gap-2">
-                  {post.categories?.map((category) => (
-                    <div class="rounded-badge border border-secondary px-4 py-1 text-xs bg-[#EAEAEB] text-primary font-bold">
-                      {category.name}
-                    </div>
-                  ))}
-                </div>
                 <div class="font-semibold hidden">
                   {calculateReadingTime(post.content.split(" ").length)}
                 </div>
@@ -108,7 +101,6 @@ export default function BlogPosts(
                   </h3>
                   <p class="text-sm text-primary">{post.excerpt}</p>
                 </div>
-
                 <div class="flex flex-wrap gap-2">
                   <span class="text-primary font-bold">
                     {post.date
@@ -120,7 +112,7 @@ export default function BlogPosts(
                       : ""}
                   </span>
                   {/* <span>•</span> */}
-                  <span class="hidden">{post.authors[0]?.name}</span>
+                  <span>{post.authors[0]?.name}</span>
                 </div>
               </div>
             </a>

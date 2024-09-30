@@ -46,18 +46,7 @@
       ]
     },
     {
-      "__resolveType": "site/sections/BlogPosts.tsx",
-      "posts": {
-        "__resolveType": "blog/loaders/BlogpostList.ts",
-        "count": 6
-      },
-      "pagination": {
-        "perPage": 6,
-        "page": 0
-      },
-      "cta": {
-        "text": "carregar mais"
-      }
+      "__resolveType": "categories"
     },
     {
       "__resolveType": "Footer"

@@ -1,0 +1,7 @@
+{
+  "name": "collections/blog/posts/761077708c89",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "__resolveType": "collections/blog/posts/e6a27b89e97d"
+  }
+}
