@@ -85,11 +85,10 @@ export default function BlogPost({ page }: Props) {
             height={56}
           /> */
           }
-          <div className="flex flex-row gap-[4px]">
+          <div className="flex flex-row">
             <p className="font-semibold text-base">
-              Escrito por {authors.map((author) => author.name).join(", ")} |
-              {" "}
-              <p className="text-base">{formattedDate}</p>
+              Escrito por {authors.map((author) => author.name).join(", ")}{" "}
+              <p className="text-base mx-2">| {formattedDate}</p>
             </p>
           </div>
         </div>

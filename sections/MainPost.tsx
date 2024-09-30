@@ -55,7 +55,7 @@ export default function MainPost({
 }: Props) {
   return (
     <div class="container lg:mx-auto mx-2 text-sm">
-      <div class="flex flex-col lg:flex-row justify-between gap-[32px]">
+      <div class="flex flex-col lg:flex-row justify-between gap-8">
         {posts.slice(0, 2).map((post) => (
           <a
             href={`/blog/${post.slug}`}

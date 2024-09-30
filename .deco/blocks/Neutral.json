@@ -16,10 +16,10 @@
   },
   "mainColors": {
     "base-100": "#ffffff",
-    "primary": "#171717",
-    "secondary": "#c7c7c7",
+    "primary": "#031D41",
+    "secondary": "#EAEAEB",
     "tertiary": "#404040",
-    "neutral": "#333333",
+    "neutral": "#EAEAEB",
     "success": "#008060",
     "warning": "#ffc453",
     "error": "#d82c0d",

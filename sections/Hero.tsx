@@ -61,14 +61,14 @@ export default function HeroFlats({
             }`}
           >
             <div
-              class="font-medium inline-block leading-[100%] lg:text-[32px] text-[32px] tracking-[-2.4px]"
+              class="font-medium py-8 block leading-[100%] text-4xl"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
             >
             </div>
             {description && (
-              <p class="leading-[150%] md:text-md text-lg">
+              <p class="leading-[150%] text-xl">
                 {description}
               </p>
             )}

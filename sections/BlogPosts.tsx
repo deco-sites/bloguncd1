@@ -85,20 +85,21 @@ export default function BlogPosts(
                 loading="lazy"
               />
               <div class="p-6 space-y-4 w-[70%]">
-                <div class="font-semibold">
+                <div class="flex flex-wrap gap-2">
+                  {post.categories?.map((category) => (
+                    <div class="badge badge-lg text-xs bg-primary">
+                      {category.name}
+                    </div>
+                  ))}
+                </div>
+                <div class="font-semibold hidden">
                   {calculateReadingTime(post.content.split(" ").length)}
                 </div>
                 <div class="space-y-2">
                   <h3 class="text-2xl">{post.title}</h3>
                   <p class="text-base">{post.excerpt}</p>
                 </div>
-                <div class="flex flex-wrap gap-2">
-                  {post.categories?.map((category) => (
-                    <div class="badge badge-lg badge-primary text-xs">
-                      {category.name}
-                    </div>
-                  ))}
-                </div>
+
                 <div class="flex flex-wrap gap-2">
                   <span>
                     {post.date

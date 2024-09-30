@@ -18,7 +18,12 @@
       "posts": [
         {
           "authors": [],
-          "categories": [],
+          "categories": [
+            {
+              "name": "Culture",
+              "slug": "culture"
+            }
+          ],
           "extraProps": [],
           "title": "CASHBACK: O QUE É E COMO USAR A SEU FAVOR NAS COMPRAS",
           "excerpt": "Já imaginou comprar e ainda receber algo em troca? Além dos descontos e das opções ...",
@@ -46,7 +51,13 @@
         "__resolveType": "blog/loaders/BlogpostList.ts",
         "count": 6
       },
-      "pagination": {}
+      "pagination": {
+        "perPage": 6,
+        "page": 0
+      },
+      "cta": {
+        "text": "carregar mais"
+      }
     },
     {
       "__resolveType": "Footer"
