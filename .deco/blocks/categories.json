@@ -1,0 +1,19 @@
+{
+  "__resolveType": "site/sections/Categories.tsx",
+  "navigation": {
+    "links": [
+      {
+        "label": "Notícias da semana",
+        "url": "/culture"
+      },
+      {
+        "label": "DICAS DA SEMANA",
+        "url": "/customization"
+      },
+      {
+        "label": "COMPARATIVO",
+        "url": "/performance"
+      }
+    ]
+  }
+}

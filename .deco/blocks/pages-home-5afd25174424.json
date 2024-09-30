@@ -46,28 +46,6 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Categories.tsx",
-        "navigation": {
-          "links": [
-            {
-              "label": "Notícias da semana",
-              "url": "/culture"
-            },
-            {
-              "label": "DICAS DA SEMANA",
-              "url": "/customization"
-            },
-            {
-              "label": "COMPARATIVO",
-              "url": "/performance"
-            }
-          ]
-        }
-      }
-    },
-    {
       "__resolveType": "site/sections/BlogPosts.tsx",
       "posts": {
         "__resolveType": "blog/loaders/BlogpostList.ts",
