@@ -7,8 +7,11 @@
   /* Allow changing font family via CMS */
   html {
     font-family: var(--font-family);
+    background: #F3F4F6 !important;
   }
-
+  body{
+    background: #F3F4F6 !important;
+  }
   /** Remove default styles from input[type=number] */
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {

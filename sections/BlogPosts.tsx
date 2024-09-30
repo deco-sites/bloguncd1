@@ -72,7 +72,7 @@ export default function BlogPosts(
           {posts?.slice(from, to).map((post) => (
             <a
               href={`/blog/${post.slug}`}
-              class="border border-secondary flex flex-row overflow-hidden rounded-lg"
+              class="border border-secondary flex flex-row overflow-hidden "
             >
               <Image
                 width={380}
@@ -84,10 +84,10 @@ export default function BlogPosts(
                 decoding="async"
                 loading="lazy"
               />
-              <div class="p-6 space-y-4 w-[70%]">
+              <div class="p-6 space-y-4 w-[70%] bg-white">
                 <div class="flex flex-wrap gap-2">
                   {post.categories?.map((category) => (
-                    <div class="badge badge-lg text-xs bg-primary">
+                    <div class="rounded-badge border border-secondary px-4 py-1 text-xs bg-[#EAEAEB] text-primary font-bold">
                       {category.name}
                     </div>
                   ))}
@@ -96,12 +96,14 @@ export default function BlogPosts(
                   {calculateReadingTime(post.content.split(" ").length)}
                 </div>
                 <div class="space-y-2">
-                  <h3 class="text-2xl">{post.title}</h3>
-                  <p class="text-base">{post.excerpt}</p>
+                  <h3 class="text-[18px] text-primary font-bold uppercase">
+                    {post.title}
+                  </h3>
+                  <p class="text-sm text-primary">{post.excerpt}</p>
                 </div>
 
                 <div class="flex flex-wrap gap-2">
-                  <span>
+                  <span class="text-primary font-bold">
                     {post.date
                       ? new Date(post.date).toLocaleDateString("en-US", {
                         month: "long",
@@ -110,8 +112,8 @@ export default function BlogPosts(
                       })
                       : ""}
                   </span>
-                  <span>•</span>
-                  <span>{post.authors[0]?.name}</span>
+                  {/* <span>•</span> */}
+                  <span class="hidden">{post.authors[0]?.name}</span>
                 </div>
               </div>
             </a>

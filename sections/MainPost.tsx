@@ -59,7 +59,7 @@ export default function MainPost({
         {posts.slice(0, 2).map((post) => (
           <a
             href={`/blog/${post.slug}`}
-            class="border border-secondary gap-8 flex flex-col overflow-hidden rounded-lg lg:w-1/2 gap-[0]"
+            class="border bg-white justify-between border-secondary flex flex-col overflow-hidden lg:w-1/2 gap-[0]"
             key={post.slug}
           >
             {post.image && (
@@ -74,24 +74,13 @@ export default function MainPost({
                 loading="lazy"
               />
             )}
-            <div class="p-6 space-y-4">
+            <div class="p-6 space-y-4 bg-white">
               <div class="space-y-2">
                 <h3 class="text-lg text-[#031D41] font-bold">{post.title}</h3>
                 <p class="text-sm text-[#031D41]">{post.excerpt}</p>
               </div>
-              {post.categories && (
-                <div class="flex flex-wrap !my-0 gap-2">
-                  {post.categories?.map((category) => (
-                    <div
-                      class="badge badge-lg badge-primary text-xs"
-                      key={category.slug}
-                    >
-                      {category.name}
-                    </div>
-                  ))}
-                </div>
-              )}
-              <div class="flex flex-wrap gap-2">
+
+              <div class="flex flex-wrap justify-between items-center gap-2">
                 <span class="text-[#031D41] text-xs font-bold">
                   {post.date
                     ? new Date(post.date).toLocaleDateString("pt-BR", {
@@ -102,7 +91,19 @@ export default function MainPost({
                     : ""}
                 </span>
                 {/* <span>•</span> */}
-                <span>{post.authors[0]?.name}</span>
+                {post.categories && (
+                  <div class="flex flex-wrap  !my-0 gap-2">
+                    {post.categories?.map((category) => (
+                      <div
+                        class="rounded-badge border border-secondary px-4 py-1 text-xs bg-[#EAEAEB] text-primary font-bold"
+                        key={category.slug}
+                      >
+                        {category.name}
+                      </div>
+                    ))}
+                  </div>
+                )}
+                <span class="hidden">{post.authors[0]?.name}</span>
               </div>
             </div>
           </a>

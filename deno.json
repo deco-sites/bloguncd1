@@ -3,10 +3,10 @@
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "@cliffy/prompt": "jsr:@cliffy/prompt@^1.0.0-rc.5",
     "@core/asyncutil": "jsr:@core/asyncutil@^1.0.0",
-    "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@0.3.0",
-    "@deco/deco": "jsr:@deco/deco@^1.104.2",
-    "@deco/durable": "jsr:@deco/durable@^0.5.3",
-    "@deco/warp": "jsr:@deco/warp@0.3.7",
+    "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@0.3.4",
+    "@deco/deco": "jsr:@deco/deco@1.104.2",
+    "@deco/durable": "jsr:@deco/durable@0.5.3",
+    "@deco/warp": "jsr:@deco/warp@0.3.8",
     "@hono/hono": "jsr:@hono/hono@^4.5.4",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
@@ -28,16 +28,17 @@
     "@std/streams": "jsr:@std/streams@^1.0.0",
     "@std/testing": "jsr:@std/testing@^1.0.0",
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.8/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.17/",
     "daisyui": "npm:daisyui@4.4.19",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.100.1/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.104.2/",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
     "preact": "npm:preact@10.23.1",
     "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
     "simple-git": "npm:simple-git@^3.25.0",
     "site/": "./",
-    "std/": "https://deno.land/std@0.204.0/"
+    "std/": "https://deno.land/std@0.204.0/",
+    "@deco/dev": "jsr:@deco/dev@1.104.0"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -74,7 +75,7 @@
       ]
     }
   },
-  "nodeModulesDir": false,
+  "nodeModulesDir": true,
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
